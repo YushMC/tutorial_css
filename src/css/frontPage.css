@@ -1,0 +1,37 @@
+.front_page{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1%;
+    margin-top: 100px;
+}
+.content_front_page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content_front_page h2{
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-weight: 800;
+    font-size: 2em;
+}
+.content_front_page p{
+    margin: 1%;
+    color: #000000b0;
+    font-weight: 300;
+}
+.content_front_page img{
+    width: 80%;
+    filter:
+    drop-shadow(1px 1px 10px black)
+    drop-shadow(6px 6px 25px rgb(255, 254, 247));
+}
+@media screen and (max-width:600px) {
+    .front_page{
+        margin-top: 130px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

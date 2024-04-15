@@ -1,0 +1,92 @@
+.content_cards{
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2%;
+    margin: 5% 0%;
+}
+.card{
+    width: 100%;
+    transition: all 0.3s linear;
+    display: flex;
+    flex-direction: row;
+}
+.card:hover{
+    transform: scale(1.1);
+    filter:
+    drop-shadow(1px 1px 10px black)
+    drop-shadow(6px 6px 25px rgb(255, 254, 247));
+}
+
+.card:hover .card_content:nth-child(1){
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.card_content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+.card_content:nth-child(1){
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s linear;
+    display: flex;
+    flex-direction: column;
+    
+}
+.card_content:nth-child(1) a{
+    margin: 4% 0%;
+    padding: 3%;
+    background-color: rgb(0, 47, 134);
+    color: #fff;
+    border-radius: 5px;
+}
+.card_content img{
+    width: 100%;
+    transition: all 0.3s linear;
+}
+.card_content:nth-child(1):hover{
+    background-color: rgba(255, 255, 255, 1);
+    transition: all 0.3s linear !important;
+}
+.card_content:nth-child(1):hover img{
+    transform: scale(1.1);
+    transition: all 0.3s linear !important;
+}
+.card_content:nth-child(2){
+    display: none;
+    transition: all 0.3s linear !important;
+    padding: 5%;
+}
+.card_content:nth-child(2):hover{
+    display: flex;
+    transition: all 0.3s linear;
+    background: rgb(0, 47, 134);
+    color: #fff;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.card_content:nth-child(1):hover + .card_content:nth-child(2){
+    display: flex;
+    transition: all 0.3s linear;
+    background: rgb(0, 47, 134);
+    color: #fff;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+@media screen and (max-width:600px) {
+    .content_cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card{
+        margin-top: 3%;
+        display: flex;
+    }
+}

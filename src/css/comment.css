@@ -1,0 +1,67 @@
+.content_comments{
+    margin: 2% 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.comment_card{
+    width: 60%;
+    margin-top: 2%;
+    border-radius: 10px;
+    border: solid 2px #000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    filter:drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.7));
+}
+.background_comment_card{
+    padding: 2%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: row;
+}
+.user_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.user_data  img{
+    width: 100%;
+}
+.comment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.comment_card:nth-child(1){
+    margin-top: 0;
+}
+.comment_card:nth-child(2n){
+    margin-left: 40%;
+}
+.comment_card:nth-child(2n) > .background_comment_card{
+    flex-direction: row-reverse;
+
+}
+@media screen and (max-width:600px) {
+    .comment_card{
+        width: 100%;
+        margin: 5% 0%;
+        background-size: cover;
+    }
+    .background_comment_card{
+        display: flex;
+        flex-direction: column;
+    }
+    .comment_card:nth-child(2n){
+        margin-left: 0%;
+    }
+    .comment_card:nth-child(2n) .background_comment_card{
+        flex-direction: column;
+    }
+}
