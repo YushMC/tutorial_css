@@ -13,7 +13,7 @@ body{
     background-size: 300%;
     background-repeat: no-repeat;
     animation: background 5s infinite linear;
-    
+    user-select: none;
 }
 main{
     width: 100%;
@@ -37,7 +37,7 @@ main{
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
 .titulo_seccion > h3{
     text-transform: uppercase;
