@@ -36,7 +36,8 @@ main{
     background-image: url(https://c4.wallpaperflare.com/wallpaper/691/170/464/fondos-de-pantalla-color-azul-abstract-wallpaper-preview.jpg);
     background-position: center;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
+    background-repeat:no-repeat;
 }
 .titulo_seccion > h3{
     text-transform: uppercase;
